@@ -22,11 +22,12 @@ function displayGif(gifSrc) {
     gif.onload = function () {
         imageContainer.appendChild(gif);
         document.getElementById('options').style.display = 'none'; // Hide buttons
-        // Update the text
+        
+        // Update the text content of the question
         const questionElement = document.getElementById('question');
-        questionElement.textContent = 'Delightful! Until our paths cross again.'; // Set the new text
-        questionElement.style.fontFamily = "'Sacramento', cursive"; // Ensure the font matches
-        questionElement.style.fontSize = '52px'; // Set the font size to match the original
+        questionElement.textContent = 'Delightful! Until our paths cross again.'; // Update text
+        questionElement.style.fontFamily = "'Sacramento', cursive"; // Ensure the same font
+        questionElement.style.fontSize = '52px'; // Ensure consistent size
     };
 }
 
