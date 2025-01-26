@@ -39,12 +39,12 @@ body {
 }
 
 button {
-    padding: 10px 20px; /* Set padding for buttons */
-    margin: 0 10px; /* Set margin around buttons */
-    font-size: 26px; /* Set font size for buttons */
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
-    background-color: #3871c1; /* Set button background color */
-    color: white; /* Set text color to white */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Set cursor to pointer on hover */
+    padding: 10px 20px; /* Space inside the buttons */
+    margin: 10px; /* Space around the buttons */
+    font-size: 26px;
+    font-family: 'Sacramento', cursive;
+    background-color: #3871c1;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
