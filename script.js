@@ -15,15 +15,18 @@ function selectOption(option) {
 // Function to display the specified GIF
 function displayGif(gifSrc) {
     const imageContainer = document.getElementById('image-container');
-    imageContainer.innerHTML = ''; // Clear previous content
+    imageContainer.innerHTML = ''; // Clear existing content
     const gif = new Image();
     gif.src = gifSrc;
     gif.alt = 'GIF';
-    gif.style.width = 'auto'; // Let CSS handle sizing
-    gif.style.height = 'auto';
     gif.onload = function () {
         imageContainer.appendChild(gif);
-        document.getElementById('options').style.display = 'none'; // Hide options
+        document.getElementById('options').style.display = 'none'; // Hide buttons
+        // Update the text
+        const questionElement = document.getElementById('question');
+        questionElement.textContent = 'Delightful! Until our paths cross again.'; // Set the new text
+        questionElement.style.fontFamily = "'Sacramento', cursive"; // Ensure the font matches
+        questionElement.style.fontSize = '52px'; // Set the font size to match the original
     };
 }
 
