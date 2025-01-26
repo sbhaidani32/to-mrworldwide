@@ -15,15 +15,18 @@ function selectOption(option) {
 // Function to display the specified GIF
 function displayGif(gifSrc) {
     const imageContainer = document.getElementById('image-container');
-    imageContainer.innerHTML = ''; // Clear existing content
+    imageContainer.innerHTML = ''; // Clear previous content
     const gif = new Image();
     gif.src = gifSrc;
     gif.alt = 'GIF';
+    gif.style.width = 'auto'; // Let CSS handle sizing
+    gif.style.height = 'auto';
     gif.onload = function () {
         imageContainer.appendChild(gif);
-        document.getElementById('options').style.display = 'none'; // Hide buttons
+        document.getElementById('options').style.display = 'none'; // Hide options
     };
 }
+
 
 // Function to enlarge the "Yes" and "Maybe" buttons
 function enlargeButtons() {

@@ -8,20 +8,22 @@ body {
 }
 
 #image-container {
-    width: 100%; /* Make the image container span the full width of the viewport */
-    height: auto; /* Allow height to adjust based on content */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the GIF horizontally */
-    align-items: center; /* Center the GIF vertically */
-    overflow: hidden; /* Prevent content from spilling out */
-    margin: 20px 0; /* Add some space above and below */
+    width: 100%; /* Ensure it spans the full width */
+    height: auto; /* Adjust height dynamically */
+    display: flex; /* Center content flexibly */
+    justify-content: center; /* Horizontally center the GIF */
+    align-items: center; /* Vertically center the GIF */
+    overflow: hidden; /* Prevent any overflow issues */
+    padding: 20px; /* Add padding to prevent cutoffs */
+    box-sizing: border-box; /* Include padding in the container size */
 }
 
 #image-container img {
-    max-width: 100%; /* Ensure the GIF doesn't exceed the container's width */
-    max-height: 80vh; /* Ensure the GIF doesn't exceed the viewport height */
-    object-fit: contain; /* Maintain aspect ratio and avoid distortion */
+    max-width: 90%; /* Limit the width to prevent overflow */
+    max-height: 80vh; /* Limit the height to fit within the viewport */
+    object-fit: contain; /* Ensure the GIF scales proportionally */
 }
+
 
 #image-container {
     /* This container will hold the images */
