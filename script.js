@@ -1,13 +1,10 @@
 // Function to handle button click events
 function selectOption(option) {
-    if (option === 'I am yours 2/14 6pm-tbd') {
+    if (option === 'I am Sara&#39;s 2/15 6pm-tbd') {
         // Display the cat-heart GIF for the "Yes" option
         displayGif('cat-heart.gif');
-    } else if (option === 'I am yours 2/15 6pm-tbd') {
-        // Display the cat-heart GIF for the "Maybe" option
-        displayGif('cat-heart.gif');
     } else if (option === 'I am homosexual') {
-        // Increase the size of the "Yes" and "Maybe" buttons
+        // Increase the size of the "Yes" button
         enlargeButtons();
     }
 }
@@ -35,13 +32,11 @@ function displayGif(gifSrc) {
 // Function to enlarge the "Yes" and "Maybe" buttons
 function enlargeButtons() {
     const yesButton = document.getElementById('yes-button');
-    const maybeButton = document.getElementById('maybe-button');
     const currentFontSize = parseFloat(
         window.getComputedStyle(yesButton).fontSize
     );
     const newSize = currentFontSize * 1.5; // Increase size by 50%
     yesButton.style.fontSize = `${newSize}px`;
-    maybeButton.style.fontSize = `${newSize}px`;
 }
 
 // Display the initial cat GIF
