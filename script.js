@@ -1,7 +1,6 @@
 // Function to handle button click events
 function selectOption(option) {
-    if (option === 'I am Sara&#39;s 2/15 6pm-tbd') {
-        // Display the cat-heart GIF for the "Yes" option
+    if (option === 'I am Sara\'s 2/15 6pm-tbd') {
         displayGif('cat-heart.gif');
     } else if (option === 'I am homosexual') {
         // Increase the size of the "Yes" button
